@@ -1,0 +1,59 @@
+.noteContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  padding: 10px;
+  background-color: var(--secondary);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.noteContainer:hover{
+  background-color: var(--secondary-hover);
+}
+
+.noteElement{
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.noteLabel{
+  margin-left: 8px;
+  width: 100%;
+}
+
+.containerCheckbox {
+  cursor: pointer;
+}
+
+.containerCheckbox input {
+  display: none;
+}
+
+.containerCheckbox svg {
+  overflow: visible;
+}
+
+.path {
+  fill: none;
+  stroke: white;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+  stroke-dasharray: 241 9999999;
+  stroke-dashoffset: 0;
+}
+
+.containerCheckbox input:checked~svg .path {
+  stroke-dasharray: 70.5096664428711 9999999;
+  stroke-dashoffset: -262.2723388671875;
+}

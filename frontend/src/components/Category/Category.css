@@ -1,0 +1,32 @@
+.categoryContainer{
+  background-color: var(--secondary);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+.categoryContainer:hover{
+  background-color: var(--secondary-hover);
+}
+
+.categoryIconContainer{
+  background-color: var(--accent);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.categoryIcon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.categoryCount{
+  margin-top: 0px;
+  font-size: 0.8em;
+  opacity: 0.7;
+}

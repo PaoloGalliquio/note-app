@@ -1,0 +1,37 @@
+.categoriesList{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.categoryItem{
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  min-width: 100px;
+  margin-right: 10px;
+  order: 0;
+}
+
+.newNoteCotainer{
+  background-color: var(--accent);
+  border-radius: 100%;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.newNoteIcon{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}

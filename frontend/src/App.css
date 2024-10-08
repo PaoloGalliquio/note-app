@@ -1,0 +1,53 @@
+:root {
+  /* --primary: #010101; 
+  --secondary: #171719;
+  --accent: #9bf3ae; */
+  --primary: #2f4858;
+  --secondary: #2d8b95;
+  --secondary-hover: #2e767e;
+  --accent: #64d1ae;
+  --accent-hover: rgb(82, 182, 150);
+  --text: white;
+  --bs-btn-hover-bg: 
+}
+
+.transition{
+  transition: 0.3s;
+}
+
+.cursorPointer{
+  cursor: pointer;
+}
+
+.btnCustom{
+  color: var(--text);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btnPrimaryCustom{
+  background-color: var(--accent);
+}
+
+.btnPrimaryCustom:hover{
+  background-color: var(--accent-hover);
+}
+
+.btnPrimaryOutlinedCustom{
+  background-color: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.btnPrimaryOutlinedCustom:hover{
+  background-color: var(--accent);
+  color: var(--text);
+}
+
+.spinner {
+  animation: spin infinite 1s linear;
+}

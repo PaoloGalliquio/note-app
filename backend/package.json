@@ -1,0 +1,29 @@
+{
+  "name": "mysql-nodejs-rest-api",
+  "version": "1.0.1",
+  "description": "Backend for note-app",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --env-file .env src/index.js",
+    "start": "node --env-file .env src/index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "pretest": "cross-env NODE_ENV=test jest --clearCache"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "mysql-nodejs-rest-api": "file:",
+    "mysql2": "^3.11.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
+  }
+}

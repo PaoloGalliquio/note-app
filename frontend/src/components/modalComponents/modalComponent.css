@@ -1,0 +1,91 @@
+.modalWrapper{
+  z-index: 9999;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: visibility, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.modalFormHeader{
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modalWrapperVisible{
+  visibility: visible;
+  background-color: #00000069;
+}
+
+.modalWrapperHidden {
+  visibility: hidden;
+}
+
+.modalContainer {
+  transition-property: transform, opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  height: auto;
+}
+
+.modalContainerVisible {
+  opacity: 1;
+}
+
+.modalContainerHidden {
+  transform: scale(1.05);
+  opacity: 0;
+}
+
+.modalFormWrapper{
+  height: auto;
+  width: 30vw;
+  position: relative;
+  background-color: var(--primary);
+  border-radius: 15px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  padding: 25px 20px;
+}
+
+@media screen and (max-width: 768px){
+  .modalFormWrapper{
+    width: 90vw;
+  }
+}
+
+.modalFormContent{
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-label {
+  font-size: 14px;
+  text-align: left;
+  color: var(--primary);
+}
+
+.modalBody {
+  position: relative;
+}
+
+.closeButton{
+  height: 40px;
+  width: 40px;
+}
+
+.footerWrapper{
+  border-top: 1px solid #dee2e6;
+  padding: 1.2rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footerWrapper .modalContainer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
